@@ -1,0 +1,43 @@
+{
+  "name": "@nonlux/fetcher",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "@nonlux/fetcher/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project @nonlux/fetcher --web",
+  "targets": {
+    "build": {
+      "executor": "@nx/esbuild:esbuild",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "platform": "node",
+        "outputPath": "dist/@nonlux/fetcher",
+        "format": ["cjs"],
+        "bundle": false,
+        "main": "@nonlux/fetcher/src/index.ts",
+        "tsConfig": "@nonlux/fetcher/tsconfig.lib.json",
+        "assets": ["@nonlux/fetcher/src/assets"],
+        "//  generatePackageJson": true,
+        "esbuildOptions": {
+          "sourcemap": true,
+          "outExtension": {
+            ".js": ".js"
+          }
+        }
+      },
+      "configurations": {
+        "development": {},
+        "production": {
+          "esbuildOptions": {
+            "sourcemap": false,
+            "outExtension": {
+              ".js": ".js"
+            }
+          }
+        }
+      }
+    },
+  }
+}
+
