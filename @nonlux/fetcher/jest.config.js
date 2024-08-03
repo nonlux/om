@@ -6,8 +6,11 @@ exports.default = {
     preset: '../../jest.preset.js',
     testEnvironment: 'node',
     transform: {
-      '^.+\\.[tj]s$': ['@swc/jest', { tsconfig: '<rootDir>/tsconfig.spec.json' }],
-    },
-    moduleFileExtensions: ['ts', 'js', 'html'],
+      '^.+\\.[tj]s$': ['@swc/jest', {
+        exclude: [],
+      },
+      ],
+},
+  moduleFileExtensions: ['ts', 'js', 'html'],
     coverageDirectory: '../../coverage/@nonlux/fetcher',
 };
