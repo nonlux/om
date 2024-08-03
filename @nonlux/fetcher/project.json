@@ -17,8 +17,6 @@
         "bundle": false,
         "main": "@nonlux/fetcher/src/index.ts",
         "tsConfig": "@nonlux/fetcher/tsconfig.lib.json",
-        "assets": ["@nonlux/fetcher/src/assets"],
-        "//  generatePackageJson": true,
         "esbuildOptions": {
           "sourcemap": true,
           "outExtension": {
