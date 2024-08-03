@@ -10,24 +10,15 @@
     "importHelpers": true,
     "target": "es2016",
     "module": "esnext",
-    "lib": [
-      "es2020",
-      "dom"
-    ],
+    "lib": ["es2020", "dom"],
     "baseUrl": ".",
     "paths": {
-      "@nonlux/fetcher": [
-        "@nonlux/fetcher/src/index.ts"
-      ]
+      "@nonlux/fetcher": ["@nonlux/fetcher/src/index.ts"]
     },
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true
   },
-  "exclude": [
-    "node_modules",
-    "tmp"
-  ],
-
+  "exclude": ["node_modules", "tmp"]
 }
