@@ -4,16 +4,19 @@
   "sourceRoot": "@nonlux/fetcher/src",
   "projectType": "library",
   "tags": [],
-  "// targets": "to see all targets run: nx show project @nonlux/fetcher --web",
   "targets": {
     "build": {
       "executor": "@nx/esbuild:esbuild",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "defaultConfiguration": "production",
       "options": {
         "platform": "node",
         "outputPath": "dist/@nonlux/fetcher",
-        "format": ["cjs"],
+        "format": [
+          "cjs"
+        ],
         "bundle": false,
         "main": "@nonlux/fetcher/src/index.ts",
         "tsConfig": "@nonlux/fetcher/tsconfig.lib.json",
@@ -36,6 +39,18 @@
         }
       }
     },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "options": {
+        "jestConfig": "libs/my-lib/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true
+        }
+      }
+    }
   }
 }
 
