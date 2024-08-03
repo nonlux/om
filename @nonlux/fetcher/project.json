@@ -6,7 +6,8 @@
   "tags": [],
   "targets": {
     "build": {
-      "executor": "@nx/esbuild:esbuild",
+      "executor": "@nx/js:swc",
+      "_executor": "@nx/esbuild:esbuild",
       "outputs": [
         "{options.outputPath}"
       ],
