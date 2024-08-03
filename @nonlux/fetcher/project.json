@@ -42,7 +42,7 @@
     "test": {
       "executor": "@nx/jest:jest",
       "options": {
-        "jestConfig": "libs/my-lib/jest.config.ts",
+        "jestConfig": "@nonlux/fetcher/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {
