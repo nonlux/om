@@ -9,14 +9,22 @@ Code meditation
   - [ ] chunk loading paginated data
 
 ##  Mono Features
+- nx
 - swc + jest
+- biome
+- [ ] volta
+- [ ] lefthook
+    - https://biomejs.dev/recipes/git-hooks/
+- [ ] pnpm https://github.com/pnpm/pnpm
+- [ ] ncu
+- [ ] npm-scripts-info
 
-## Todo
 
-- [ ] biome for root
+## NX 
 
-## Running tasks
+[Guide](https://nx.dev/getting-started/intro?utm_medium=website&utm_campaign=homepage_links&utm_content=cta_hero_get_started#try-nx-yourself)
 
+### Running tasks
 
 To execute tasks with Nx use the following syntax:
 
@@ -36,39 +44,22 @@ npx nx run-many -t <target1> <target2>
 npx nx run-many -t <target1> <target2> -p <proj1> <proj2>
 ```
 
-Targets can be defined in the `package.json` or `projects.json`. Learn more [in the docs](https://nx.dev/features/run-tasks).
+Defined in `projects.json`
+
+Learn more [in the docs](https://nx.dev/features/run-tasks).
 
 
-
-## Nx plugins and code generators
-
-Add Nx plugins to leverage their code generators and automated, inferred tasks.
+### View project details
 
 ```
-# Add plugin
-npx nx add @nx/react
-
-# Use code generator
-npx nx generate @nx/react:app demo
-
-# Run development server
-npx nx serve demo
-
-# View project details
-npx nx show project demo --web
+npx nx show project @nonlux/fetcher --web
 ```
 
-Run `npx nx list` to get a list of available plugins and whether they have generators. Then run `npx nx list <plugin-name>` to see what generators are available.
+Run `npx nx list`
 
-Learn more about [code generators](https://nx.dev/features/generate-code) and [inferred tasks](https://nx.dev/concepts/inferred-tasks) in the docs.
-
-
-## Explore the project graph
+### Explore the project graph
 
 Run `npx nx graph` to show the graph of the workspace.
-It will show tasks that you can run with Nx.
-- [Learn more about Exploring the Project Graph](https://nx.dev/core-features/explore-graph)
-
 
 ## Biome
 
