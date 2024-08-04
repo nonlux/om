@@ -2,6 +2,14 @@
 
 Code meditation
 
+
+##  Init
+
+```
+git clone ...
+npx lefthook install
+```
+
 ## Packages
 
 - `@nonlux/fetcher` node-fetch extension
@@ -9,15 +17,18 @@ Code meditation
   - [ ] chunk loading paginated data
 
 ##  Mono Features
-- nx
-- swc + jest
-- biome
+- [nx](https://nx.dev/getting-started/intro?utm_medium=website&utm_campaign=homepage_links&utm_content=cta_hero_get_started#try-nx-yourself)
+- [swc](https://swc.rs/) + [jest](https://swc.rs/docs/usage/jest)
+- [biome](https://biomejs.dev/)
 - [volta](https://volta.sh/)
-- [ ] lefthook
+- [lefthook](https://github.com/evilmartians/lefthook)
     - https://biomejs.dev/recipes/git-hooks/
 - [ ] pnpm https://github.com/pnpm/pnpm
 - [ ] ncu
 - [ ] npm-scripts-info
+- [ ] correct email for git
+- [ ] nx + semver
+- [ ] audit
 
 
 ## NX
@@ -64,13 +75,19 @@ Run `npx nx graph` to show the graph of the workspace.
 ## Biome
 
  [Configuration](https://biomejs.dev/reference/configuration/#formatter)
- 
+
  **Required manual installtion for project**
- 
- ## Volta
- 
+
+## Volta
+
  **Required manual installtion for project**
 
 ```
 volta pin node@22
+```
+
+## Lefthook
+
+```
+npx lefthook install
 ```

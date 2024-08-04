@@ -9,14 +9,17 @@
     "enabled": true,
     "rules": {
       "recommended": true
-    },
+    }
+  },
+  "files": {
     "ignore": [
       "**/node_modules",
       "dist",
       "tmp",
       "jest.config.js",
       "@nonlux",
-      "packages"
+      "packages",
+      ".nx"
     ]
   },
   "javascript": {
