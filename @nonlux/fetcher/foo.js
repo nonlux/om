@@ -1,1 +1,1 @@
-const foo='x';
+const foo = 'x';

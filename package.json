@@ -4,10 +4,14 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "nx build",
+    "nx": "nx",
     "biome": "biome",
     "lefthook": "lefthook",
-    "lint": "biome check --write"
+    "task:build": "nx build",
+    "task:lint": "nx lint",
+    "task:lint:ci": "biome check --write",
+    "task:lint:root": "biome check --write",
+    "task:lint:root:ci": "biome check"
   },
   "description": "monorepo for my experiments",
   "main": "index.js",
@@ -15,7 +19,6 @@
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
     "@nx/esbuild": "^19.5.6",
-    "@nx/eslint": "19.5.6",
     "@nx/eslint-plugin": "19.5.6",
     "@nx/jest": "19.5.6",
     "@nx/js": "19.5.6",

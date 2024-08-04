@@ -51,13 +51,7 @@
     "lint": {
       "executor": "nx:run-script",
       "options": {
-        "script": "biome -- lint --write"
-      }
-    },
-    "format": {
-      "executor": "nx:run-script",
-      "options": {
-        "script": "biome -- format --write"
+        "script": "biome -- check --write"
       }
     }
   }

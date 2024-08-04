@@ -29,6 +29,8 @@ npx lefthook install
 - [ ] correct email for git
 - [ ] nx + semver
 - [ ] audit
+- [ ] nx project for root
+- [ ] project lint ci
 
 
 ## NX
@@ -77,6 +79,10 @@ Run `npx nx graph` to show the graph of the workspace.
  [Configuration](https://biomejs.dev/reference/configuration/#formatter)
 
  **Required manual installtion for project**
+```
+biome init
+ #vim project.json to add lint task
+```
 
 ## Volta
 

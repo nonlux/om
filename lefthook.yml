@@ -14,7 +14,10 @@ pre-push:
 pre-commit:
   parallel: true
   commands:
-    lint:
+    lint_root:
       glob: "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}"
       run: npx biome check --no-errors-on-unmatched --files-ignore-unknown=true --colors=off --write {staged_files}
+      stage_fixed: true
+    lint_projects:
+      run:  npx nx run-many -t lint
       stage_fixed: true
