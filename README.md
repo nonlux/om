@@ -31,6 +31,8 @@ npx lefthook install
 - [ ] audit
 - [ ] nx project for root
 - [ ] project lint ci
+- [ ] git-branch-lockfile=true
+- [ ] https://github.com/changesets/changesets
 
 
 ## NX

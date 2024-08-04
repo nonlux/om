@@ -4,6 +4,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "swc": "swc",
+    "jest": "jest",
     "nx": "nx",
     "biome": "biome",
     "lefthook": "lefthook",

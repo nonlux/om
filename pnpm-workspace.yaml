@@ -1,0 +1,5 @@
+workpaces:
+  package
+packages:
+  - 'packages/*'
+  - '@nonlux/*'
