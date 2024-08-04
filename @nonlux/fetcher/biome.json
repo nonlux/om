@@ -1,0 +1,21 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+  "organizeImports": { "enabled": true },
+  "linter": {
+    "enabled": true,
+    "rules": { "recommended": false },
+    "ignore": ["**/*"]
+  },
+  "overrides": [
+    { "include": ["*.ts", "*.tsx", "*.js", "*.jsx"] },
+    { "include": ["*.ts", "*.tsx"] },
+    { "include": ["*.js", "*.jsx"] },
+    {
+      "include": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "linter": { "rules": {} }
+    },
+    { "include": ["*.ts", "*.tsx"] },
+    { "include": ["*.js", "*.jsx"] },
+    { "include": ["*.spec.ts", "*.spec.tsx", "*.spec.js", "*.spec.jsx"] }
+  ]
+}

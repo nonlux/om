@@ -8,16 +8,12 @@
     "build": {
       "executor": "@nx/js:swc",
       "_executor": "@nx/esbuild:esbuild",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
         "platform": "node",
         "outputPath": "dist/@nonlux/fetcher",
-        "format": [
-          "cjs"
-        ],
+        "format": ["cjs"],
         "bundle": false,
         "main": "@nonlux/fetcher/src/index.ts",
         "tsConfig": "@nonlux/fetcher/tsconfig.lib.json",
@@ -51,7 +47,18 @@
           "ci": true
         }
       }
+    },
+    "lint": {
+      "executor": "nx:run-script",
+      "options": {
+        "script": "biome -- lint --write"
+      }
+    },
+    "format": {
+      "executor": "nx:run-script",
+      "options": {
+        "script": "biome -- format --write"
+      }
     }
   }
 }
-
