@@ -39,10 +39,7 @@
     "ts-node": "10.9.1",
     "typescript": "^5.5.4"
   },
-  "workspaces": [
-    "packages/*",
-    "@nonlux/*"
-  ],
+  "workspaces": ["packages/*", "@nonlux/*"],
   "dependencies": {
     "tslib": "^2.3.0"
   }

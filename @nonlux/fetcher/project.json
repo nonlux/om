@@ -1,64 +1,64 @@
 {
-	"name": "@nonlux/fetcher",
-	"$schema": "../../node_modules/nx/schemas/project-schema.json",
-	"sourceRoot": "@nonlux/fetcher/src",
-	"projectType": "library",
-	"tags": [],
-	"targets": {
-		"build": {
-			"executor": "@nx/js:swc",
-			"_executor": "@nx/esbuild:esbuild",
-			"outputs": ["{options.outputPath}"],
-			"defaultConfiguration": "production",
-			"options": {
-				"platform": "node",
-				"outputPath": "dist/@nonlux/fetcher",
-				"format": ["cjs"],
-				"bundle": false,
-				"main": "@nonlux/fetcher/src/index.ts",
-				"tsConfig": "@nonlux/fetcher/tsconfig.lib.json",
-				"esbuildOptions": {
-					"sourcemap": true,
-					"outExtension": {
-						".js": ".js"
-					}
-				}
-			},
-			"configurations": {
-				"development": {},
-				"production": {
-					"esbuildOptions": {
-						"sourcemap": false,
-						"outExtension": {
-							".js": ".js"
-						}
-					}
-				}
-			}
-		},
-		"test": {
-			"executor": "@nx/jest:jest",
-			"options": {
-				"jestConfig": "@nonlux/fetcher/jest.config.ts",
-				"passWithNoTests": true
-			},
-			"configurations": {
-				"ci": {
-					"ci": true
-				}
-			}
-		},
-		"lint": {
-			"executor": "nx:run-script",
-			"options": {
-				"script": "biome -- lint --write"
-			}
-		},
-		"format": {
-			"executor": "nx:run-script",
-			"options": {
-				"script": "biome -- format --write"
-			}
-		}
-	}
+  "name": "@nonlux/fetcher",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "@nonlux/fetcher/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:swc",
+      "_executor": "@nx/esbuild:esbuild",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "platform": "node",
+        "outputPath": "dist/@nonlux/fetcher",
+        "format": ["cjs"],
+        "bundle": false,
+        "main": "@nonlux/fetcher/src/index.ts",
+        "tsConfig": "@nonlux/fetcher/tsconfig.lib.json",
+        "esbuildOptions": {
+          "sourcemap": true,
+          "outExtension": {
+            ".js": ".js"
+          }
+        }
+      },
+      "configurations": {
+        "development": {},
+        "production": {
+          "esbuildOptions": {
+            "sourcemap": false,
+            "outExtension": {
+              ".js": ".js"
+            }
+          }
+        }
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "options": {
+        "jestConfig": "@nonlux/fetcher/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true
+        }
+      }
+    },
+    "lint": {
+      "executor": "nx:run-script",
+      "options": {
+        "script": "biome -- lint --write"
+      }
+    },
+    "format": {
+      "executor": "nx:run-script",
+      "options": {
+        "script": "biome -- format --write"
+      }
+    }
+  }
 }

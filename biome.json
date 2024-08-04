@@ -1,18 +1,27 @@
 {
   "$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
   "organizeImports": { "enabled": true },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space"
+  },
   "linter": {
     "enabled": true,
-    "rules": { "recommended": false },
-    "ignore": ["**/*", "**/node_modules"]
-  },
-  "overrides": [
-    {
-      "include": ["*.ts", "*.tsx", "*.js", "*.jsx"],
-      "linter": { "rules": {} }
+    "rules": {
+      "recommended": true
     },
-    { "include": ["*.ts", "*.tsx"] },
-    { "include": ["*.js", "*.jsx"] },
-    { "include": ["*.spec.ts", "*.spec.tsx", "*.spec.js", "*.spec.jsx"] }
-  ]
+    "ignore": [
+      "**/node_modules",
+      "dist",
+      "tmp",
+      "jest.config.js",
+      "@nonlux",
+      "packages"
+    ]
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single"
+    }
+  }
 }

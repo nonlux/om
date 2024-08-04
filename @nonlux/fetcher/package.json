@@ -1,13 +1,13 @@
 {
-	"name": "@nonlux/fetcher",
-	"version": "0.0.1",
-	"main": "./index.js",
-	"type": "commonjs",
-	"scripts": {
-		"biome": "biome"
-	},
-	"dependencies": {
-		"@swc/helpers": "~0.5.11"
-	},
-	"devDependencies": {}
+  "name": "@nonlux/fetcher",
+  "version": "0.0.1",
+  "main": "./index.js",
+  "type": "commonjs",
+  "scripts": {
+    "biome": "biome"
+  },
+  "dependencies": {
+    "@swc/helpers": "~0.5.11"
+  },
+  "devDependencies": {}
 }
