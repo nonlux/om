@@ -12,7 +12,7 @@ Code meditation
 - nx
 - swc + jest
 - biome
-- [ ] volta
+- [volta](https://volta.sh/)
 - [ ] lefthook
     - https://biomejs.dev/recipes/git-hooks/
 - [ ] pnpm https://github.com/pnpm/pnpm
@@ -20,7 +20,7 @@ Code meditation
 - [ ] npm-scripts-info
 
 
-## NX 
+## NX
 
 [Guide](https://nx.dev/getting-started/intro?utm_medium=website&utm_campaign=homepage_links&utm_content=cta_hero_get_started#try-nx-yourself)
 
@@ -64,3 +64,13 @@ Run `npx nx graph` to show the graph of the workspace.
 ## Biome
 
  [Configuration](https://biomejs.dev/reference/configuration/#formatter)
+ 
+ **Required manual installtion for project**
+ 
+ ## Volta
+ 
+ **Required manual installtion for project**
+
+```
+volta pin node@22
+```

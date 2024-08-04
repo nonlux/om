@@ -9,5 +9,8 @@
   "dependencies": {
     "@swc/helpers": "~0.5.11"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "volta": {
+    "node": "22.5.1"
+  }
 }
