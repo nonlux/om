@@ -53,6 +53,12 @@
       "options": {
         "script": "biome check --write"
       }
+    },
+    "fix": {
+      "executor": "nx:run-script",
+      "options": {
+        "script": "biome check --fix"
+      }
     }
   }
 }

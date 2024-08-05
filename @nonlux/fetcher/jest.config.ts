@@ -1,14 +1,27 @@
+// ts
+//https://github.com/swc-project/jest/issues/62
+
+const fs = require('node:fs');
+
+const config = JSON.parse(fs.readFileSync(`${__dirname}/.swcrc`, 'utf-8'));
+config.exclude = [
+  'foo',
+  //'**/node_modules'
+];
+
 /* eslint-disable */
 export default {
   displayName: '@nonlux/fetcher',
   preset: '../../jest.preset.js',
   testEnvironment: 'node',
+  // fix pnpm jest
+  transformIgnorePatterns: ['/node_modules/!(.pnpm)'],
   transform: {
     '^.+\\.[tj]s$': [
       '@swc/jest',
       {
-        //tsconfig: '<rootDir>/tsconfig.spec.json',
-        exclude: [],
+        ...config,
+        swcrc: false,
       },
     ],
   },

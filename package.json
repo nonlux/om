@@ -9,11 +9,13 @@
     "nx": "nx",
     "biome": "biome",
     "lefthook": "lefthook",
-    "task:build": "nx build",
-    "task:lint": "nx lint",
-    "task:lint:ci": "biome check --write",
+    "task:test": "./.bin/tash.sh test",
+    "task:build": "./.bin/tash.sh build",
+    "task:lint": "./.bin/tash.sh lint",
+    "task:lint:ci": "biome check",
     "task:lint:root": "biome check --write",
-    "task:lint:root:ci": "biome check"
+    "task:lint:root:ci": "biome check",
+    "task:fix": "./.bin/tash.sh fix"
   },
   "description": "monorepo for my experiments",
   "main": "index.js",

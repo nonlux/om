@@ -13,8 +13,7 @@
     "lib": ["es2020", "dom"],
     "baseUrl": ".",
     "paths": {
-      "@nonlux/fetcher": ["@nonlux/fetcher/src/index.ts"],
-      "@nonlux/my-swc-lib": ["@nonlux/my-swc-lib/src/index.ts"]
+      "@nonlux/fetcher": ["@nonlux/fetcher/src/index.ts"]
     },
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,

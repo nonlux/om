@@ -7,9 +7,9 @@
     "biome": "biome"
   },
   "dependencies": {
-    "@swc/helpers": "~0.5.11"
+    "@swc/helpers": "~0.5.11",
+    "node-fetch": "^3.3.2"
   },
-  "devDependencies": {},
   "volta": {
     "node": "22.5.1"
   }

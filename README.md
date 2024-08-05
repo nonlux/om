@@ -15,6 +15,10 @@ npx lefthook install
 - `@nonlux/fetcher` node-fetch extension
   - [ ] avoid json parse if server send html
   - [ ] chunk loading paginated data
+  - [ ] errors
+  - [ ] DEBUG
+  - [ ] metrics
+
 
 ##  Mono Features
 - [nx](https://nx.dev/getting-started/intro?utm_medium=website&utm_campaign=homepage_links&utm_content=cta_hero_get_started#try-nx-yourself)
@@ -33,6 +37,9 @@ npx lefthook install
 - [ ] project lint ci
 - [ ] git-branch-lockfile=true
 - [ ] https://github.com/changesets/changesets
+- [ ] engine and pnpm check
+- [ ] global swc
+- [ ] ts-node swc
 
 
 ## NX
@@ -98,4 +105,12 @@ volta pin node@22
 
 ```
 npx lefthook install
+```
+
+## PNMP
+
+add deps for nested from root
+
+```
+pnpm add node-fetch --filter @nonlux/fetcher
 ```
