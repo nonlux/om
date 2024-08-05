@@ -20,4 +20,3 @@ pre-commit:
       stage_fixed: true
     lint_projects:
       run:  pnpm nx run-many -t lint
-      stage_fixed: true
