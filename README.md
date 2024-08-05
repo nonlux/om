@@ -27,13 +27,15 @@ npx lefthook install
 - [volta](https://volta.sh/)
 - [lefthook](https://github.com/evilmartians/lefthook)
     - https://biomejs.dev/recipes/git-hooks/
-- [ ] pnpm https://github.com/pnpm/pnpm
+
+- pnpm https://github.com/pnpm/pnpm
 - [ ] ncu
 - [ ] npm-scripts-info
 - [ ] correct email for git
 - [ ] nx + semver
 - [ ] audit
 - [ ] nx project for root
+- [ ] project lint git commit
 - [ ] project lint ci
 - [ ] git-branch-lockfile=true
 - [ ] https://github.com/changesets/changesets
